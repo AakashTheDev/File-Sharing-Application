@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    font-family: "Bungee Spice", sans-serif;
+    font-family: "Dhurjati", sans-serif;
+    font-family: "Nova Square", sans-serif;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+@keyframes lightingEffect {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.light-effect {
+  animation: lightingEffect 3s infinite; /* Adjust the duration as needed */
+}
